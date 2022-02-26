@@ -1,13 +1,13 @@
 /* Global Variables */
 const baseURL = "https://api.openweathermap.org/data/2.5/weather";
 
-const key = '0b26df611e6727d54c2adf7a4a2886a1';
+const key = '0b26df611e6727d54c2adf7a4a2886a1&units=metric';
 
 const generateBtn = document.getElementById('generate');
 const zipCode = document.getElementById('zip');
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate =  d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 const getWeatherFunction = async (zipcode) => {
 
